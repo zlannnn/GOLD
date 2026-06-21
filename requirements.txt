@@ -1,0 +1,10 @@
+# 黄金 SMC/ICT 交易系统依赖
+# Python 3.10+ (本机测试环境 3.13.5)
+
+# --- 分析 / 回测 (无需 MT5, 任意平台可跑) ---
+pandas>=2.0          # 已在 pandas 3.0.x 上验证 (注意: 构建带时间索引的DataFrame务必用 .to_numpy())
+numpy>=1.24
+matplotlib>=3.7
+
+# --- 实盘机器人 (仅 Windows + 已安装 MT5 终端) ---
+MetaTrader5>=5.0.45
